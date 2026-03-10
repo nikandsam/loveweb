@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import CardPage from './components/CardPage';
+import VideoPage from './components/VideoPage';
 import BirthdayMessage from './components/BirthdayMessage';
 import GalleryPage from './components/GalleryPage';
 import RomanticMessage from './components/RomanticMessage';
@@ -16,6 +17,7 @@ function App() {
 
   const pages = [
     <CardPage onNext={nextPage} />,
+    <VideoPage onNext={nextPage} />,
     <BirthdayMessage onNext={nextPage} />,
     <GalleryPage onNext={nextPage} />,
     <RomanticMessage onNext={nextPage} />,
